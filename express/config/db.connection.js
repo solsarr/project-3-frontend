@@ -1,5 +1,6 @@
 // DEPENDENCIES
 
+require('dotenv').config()
 // pull PORT from .env, give default value of 4000
 const mongoose = require('mongoose');
 const {MONGODB_URI} = process.env
