@@ -30,8 +30,14 @@ router.post('/', async (req,res)=>{
 })
 
 // SHOW/GET route
-router.get('/:id', (req,res)=>{
-    res.status(200).json({message: "insta show/get route"})
+router.get('/:id', async (req,res)=>{
+    // res.status(200).json({message: "insta show/get route"})
+    try{
+        const showUser= await User.findById(req.params.id)
+        res.status(201).json(showUser)
+    } catch(err){
+        res.status(400).json({error:err})
+    }
 })
 // DELETE route
 router.delete('/:id', (req,res)=>{
