@@ -43,6 +43,10 @@ Link: [https://www.figma.com/file/4nLljB1094YM3kIebrWRuZ/Project-3-wireframe?nod
 * After that it will lead them to the page  and can access their post and see other people’s post. 
 * They have option to comment and like the post.
 
+## User Flow Map
+
+<img width="868" alt="Screenshot 2023-01-04 at 10 48 34 AM" src="https://user-images.githubusercontent.com/117063196/210594501-d41ab4ce-fdf7-41b8-8079-137b941a0618.png">
+
 ### ERD
 
 Link: [https://lucid.app/lucidchart/6df5c8d1-65a9-4069-a50c-a5315c8a45b2/edit?beaconFlow[…]ionId=inv_5915e4e6-4119-430b-92b2-93589c19e142&page=n-zky~1WaKVm]
