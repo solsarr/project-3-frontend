@@ -9,6 +9,7 @@ Create a mock social media website that allows the posting of pictures as well a
 ## Responsibility:
 
 Fronted - Solomon
+
 Backend - Feven
 
 ## Trello Board: 
