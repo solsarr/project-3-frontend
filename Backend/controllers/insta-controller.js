@@ -40,12 +40,24 @@ router.get('/:id', async (req,res)=>{
     }
 })
 // DELETE route
-router.delete('/:id', (req,res)=>{
-    res.status(200).json({message: "insta delete/destory route"})
+router.delete('/:id', async (req,res)=>{
+    // res.status(200).json({message: "insta delete/destory route"})
+    try{
+        const deletedUser = await User.findByIdAndDelete(req.params.id)
+        res.status(201).json(deletedUser)
+    } catch(err) {
+        res.status(400).json({error:err})
+    }
 })
 // UPDATE/PUT route
-router.put('/:id', (req,res)=>{
-    res.status(200).json({message: "insta updatte/put route"})
+router.put('/:id', async (req,res)=>{
+    // res.status(200).json({message: "insta updatte/put route"})
+    try {
+        const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, {new:true})
+        res.status(201).json(updatedUser)
+    } catch(err) {
+        res.status(400).json({error:err})
+    }
 })
 
 module.exports = router
