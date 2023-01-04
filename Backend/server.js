@@ -12,6 +12,9 @@ require('./config/db.connection')
 const { PORT } = process.env
 // const PORT = 4000;
 
+// app middleware(express)
+app.use(express.json())
+
 // cors function
 app.use(cors())
 // morgan function

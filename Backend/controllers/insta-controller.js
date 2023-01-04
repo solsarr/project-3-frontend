@@ -10,6 +10,7 @@ router.get('/', (req,res)=>{
 })
 // Create route
 router.post('/', (req,res)=>{
+    // console.log('post route', req.body)
     res.status(200).json({message: "insta create/post route"})
 })
 
