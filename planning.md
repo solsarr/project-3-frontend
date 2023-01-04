@@ -20,15 +20,21 @@ Link: [https://trello.com/invite/b/NHFnCko9/ATTI1f8587a0a89dab3938023561ca6c6f3b
 
 <img width="771" alt="Screenshot 2023-01-03 at 4 33 14 PM" src="https://user-images.githubusercontent.com/117063196/210445005-929ac53a-8347-450c-82aa-c06ec3a4c42c.png">
 
-## FEATURES:  ( Profile, Comments, Likes, Posting)
-
-### Wireframe
+## Wireframe
 
 Link: [https://www.figma.com/file/4nLljB1094YM3kIebrWRuZ/Project-3-wireframe?node-id=0%3A1&t=MrfN6tSp1hvNdkMA-0]
 
-#### Image
+### Signup page
 
-<img width="270" alt="Screenshot 2023-01-03 at 4 05 24 PM" src="https://user-images.githubusercontent.com/117063196/210444088-5ead5a74-eddd-4121-b4e2-075faa946d63.png">
+<img width="397" alt="Screenshot 2023-01-04 at 10 18 18 AM" src="https://user-images.githubusercontent.com/117063196/210587807-dd93883f-ad82-46db-ad05-9f9e8128cf8c.png">
+
+### Homepage
+
+<img width="388" alt="Screenshot 2023-01-04 at 10 18 13 AM" src="https://user-images.githubusercontent.com/117063196/210587966-f6dbe5d9-cc12-4e4d-864d-761d8eebcc24.png">
+
+### Detail page - Post page
+
+<img width="396" alt="Screenshot 2023-01-04 at 10 18 05 AM" src="https://user-images.githubusercontent.com/117063196/210588127-2d8e114f-1be9-4e67-8363-f5e9b18ffe40.png">
 
 ## User stories
 
