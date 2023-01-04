@@ -7,8 +7,14 @@ const db = require('../models')
 console.log(User)
 // Routes
 // INDEX route
-router.get('/', (req,res)=>{
-    res.status(200).json({message: "insta index route"})
+router.get('/', async (req,res)=>{
+    // res.status(200).json({message: "insta index route"})
+    try{
+        const allUser = await User.find({})
+        res.status(200).json(allUser)
+    } catch(err){
+        res.status(400).json({error: err})
+    }
 })
 // Create route
 router.post('/', async (req,res)=>{
