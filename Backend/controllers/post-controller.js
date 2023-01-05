@@ -2,19 +2,19 @@ const express = require('express')
 const router = express.Router()
 
 const {User} = require('../models')
-// const {Post} = require('../models')
+const {Post} = require('../models')
 
 // Json body
 router.use(express.json())
 
 const db = require('../models')
-console.log(User)
+console.log(Post)
 // Routes
 // INDEX route
 router.get('/', async (req,res)=>{
     // res.status(200).json({message: "insta index route"})
     try{
-        const allUser = await User.find({})
+        const allUser = await User.find({}).populate("user")
         res.status(200).json(allUser)
     } catch(err){
         res.status(400).json({error: err})
