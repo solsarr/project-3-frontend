@@ -42,7 +42,7 @@ setError(true);
 } else {
 setSubmitted(true);
 setError(false);
-fetch('http://localhost:4000/insta/post', {
+fetch('http://localhost:4000/insta', {
   method: "POST",
   headers: {
     'Content-type': 'application/json'
