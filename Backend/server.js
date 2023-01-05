@@ -5,7 +5,8 @@ const cors = require('cors')
 const morgan = require('morgan')
 // controller import
 const instaController = require('./controllers/insta-controller')
-
+const postcontroller = require('./controllers/post-controller')
+const commentController = require('./controllers/comment-controller')
 require("dotenv").config()
 require('./config/db.connection')
 
@@ -22,6 +23,8 @@ app.use(morgan('dev'))
 
 // router middleware
 app.use('/insta', instaController)
+app.use('/insta/post', postcontroller)
+app.use('/insta/comment', commentController)
 
 // root router
 app.get('/', (req,res) => res.redirect('/insta'))

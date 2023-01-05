@@ -3,18 +3,18 @@ const router = express.Router()
 
 const {User} = require('../models')
 const {Post} = require('../models')
-const {Comment} = require('../models')
 
 // Json body
 router.use(express.json())
 
 const db = require('../models')
-console.log(Comment)
+console.log(Post)
 // Routes
 // INDEX route
 router.get("/", (req, res) => {
 	res.status(200).json({message: "comment index route"})
 });
+
 // CREATE ROUTE
 router.post("/",  (req, res) =>  {
 	console.log(req.body)
