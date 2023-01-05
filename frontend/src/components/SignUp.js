@@ -9,7 +9,6 @@ const navigate = useNavigate();
 
 // states for registration
 const [name, setName] = useState('');
-const [password, setPassword] = useState('');
 const [url, setURL] = useState('');
 
 
@@ -43,6 +42,17 @@ setError(true);
 } else {
 setSubmitted(true);
 setError(false);
+fetch('http://localhost:4000/insta/post', {
+  method: "POST",
+  headers: {
+    'Content-type': 'application/json'
+  },
+  body: JSON.stringify(name)
+})
+.then((response) => response.json())
+.then((result) => {
+  console.log(result)
+});
 navigate('/profile');
 
 }
