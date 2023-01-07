@@ -6,7 +6,21 @@ import ProfilePage from "./Profile";
 export default function Form(props) {
 
   const navigate = useNavigate();
-
+  const registerUser = async() => {
+    const newuser = await fetch('https://fev-sol-project3.herokuapp.com/user'
+         .then((newuser)=> console.log(newuser)) ,
+         newuser,{
+            mode: "no-cors",
+            method: "POST",
+            headers: {
+              'Content-type': 'application/json',
+            },
+            body: JSON.stringify(name)
+          })
+            .then((response) => response.json())
+            .then((result) => {
+              console.log(result)
+            })};
   // states for registration
   const [name, setName] = useState('');
   const [url, setURL] = useState('');
@@ -42,19 +56,8 @@ export default function Form(props) {
     } else {
       setSubmitted(true);
       setError(false);
-      fetch('http://localhost:4000/insta', {
-        method: "POST",
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: JSON.stringify(name)
-      })
-        .then((response) => response.json())
-        .then((result) => {
-          console.log(result)
-        });
-      navigate('/profile');
-
+registerUser();
+navigate('/profile')
     }
   };
 
